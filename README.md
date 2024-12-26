@@ -8,7 +8,7 @@ This server is dedicated to training AI models and computational tasks related t
 
 
 
-Server Usage Rules for Users
+### Server Usage Rules for Users
 
 Authorized Users Only: Access to the server is granted only to authorized users for academic purposes.
 
@@ -32,7 +32,7 @@ Follow University Policies: Adhere to all university policies and guidelines rel
 
 
 
-Consequences of Misuse
+### Consequences of Misuse
 
 Account Suspension: Failure to follow these rules may result in temporary or permanent suspension of server access.
 
@@ -44,11 +44,11 @@ Academic Discipline: Misuse of resources may be reported and could lead to acade
 
 
 
-Tutorial on Remote Login, Module Loading, and Job Submission with Slurm
+### Tutorial on Remote Login, Module Loading, and Job Submission with Slurm
 
 
 
-Prerequisites
+### Prerequisites
 
 
 - The SSH client is installed on your local machine.
@@ -64,7 +64,7 @@ Prerequisites
 ----------------------------------------------------------------------------------------------------------------
 
 
-Step 1: Login to the Remote Server
+### Step 1: Login to the Remote Server
 
 
 To Login via SSH:
@@ -91,7 +91,7 @@ To Login via SSH:
 ----------------------------------------------------------------------------------------------------------------
 
 
-Step 2: Load Required Modules
+### Step 2: Load Required Modules
 
 
 Modules often access specific software or libraries on a shared server (currently, only Anaconda is installed with the latest Torch, TensorFlow). You can also install packages with pip and create your python environment with conda.
@@ -127,7 +127,7 @@ Listing and Loading Modules:
 ----------------------------------------------------------------------------------------------------------------
 
 
-Step 3: Prepare a Slurm Job Script
+### Step 3: Prepare a Slurm Job Script
 
 
 There are two ways to submit jobs to SLURM.
@@ -187,7 +187,7 @@ Create a Job Script:
 ----------------------------------------------------------------------------------------------------------------
 
 
-Step 4: Submit the Job to Slurm
+### Step 4: Submit the Job to Slurm
 
 
 To Submit the Job:
@@ -212,7 +212,7 @@ To View Job Output:
 ----------------------------------------------------------------------------------------------------------------
 
 
-Step 5: Monitor and Manage Jobs
+### Step 5: Monitor and Manage Jobs
 
 
 Common Job Management Commands:
@@ -231,7 +231,7 @@ Note: Always confirm job parameters and resource requests as appropriate for you
 ----------------------------------------------------------------------------------------------------------------
 
 
-To use jupyter notebook with SBATCH:
+### To use jupyter notebook with SBATCH:
 
 
 	1. SSH with -L with the jupyter port assigned to you (e.g., 9001)
