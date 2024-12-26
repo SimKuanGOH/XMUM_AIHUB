@@ -1,10 +1,12 @@
+# AIHUB – XMUM AIT GPU Server
+
 ## Rules and Tutorial on Remote Login, Module Loading, and Job Submission with Slurm
 
 
 
 ### Purpose of Use
 
-This server is dedicated to training AI models and computational tasks related to your coursework or research in AI. Security testing, penetration testing, or unrelated tasks are strictly prohibited. Basic Linux skills that are expected. 
+This server is dedicated to training AI models and computational tasks related to your coursework or research in AI. Security testing, penetration testing, or unrelated tasks are strictly prohibited. Basic Linux skills are expected. 
 
 
 
