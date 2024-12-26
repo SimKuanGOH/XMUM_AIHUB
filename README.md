@@ -82,7 +82,7 @@ To Login via SSH:
 
    Example:
 
-   ssh user123@cluster.example.com
+		ssh user123@cluster.example.com
 
 
 3. Authenticate by entering your password if prompted. List of allowed commands will be displayed after login.
@@ -101,7 +101,7 @@ Listing and Loading Modules:
 
 1. List Available Modules:
 
-   module avail
+		module avail
 
    - This command displays all modules available for loading on the server.
 
@@ -114,12 +114,12 @@ Listing and Loading Modules:
 
    Example:
 
-   module load anaconda
+		module load anaconda
 
 
 3. Verify Loaded Modules:
 
-   module list
+		module list
 
    - Shows the list of modules currently loaded in your session.
 
@@ -133,50 +133,49 @@ Listing and Loading Modules:
 There are two ways to submit jobs to SLURM.
 
 
-Method 1: Run a Python script interactively:
+#### Method 1: Run a Python script interactively:
 
-   srun --gres=gpu:1 --time=00:30:00 -mem=500M python my_script.py
+1. From terminal,
+		
+		srun --gres=gpu:1 --time=00:30:00 -mem=500M python my_script.py
 
    
-  Information:
-   - `--gres=gpu:1`: Specifies 1 GPU.
-
-   - `--time=00:30:00`: Sets a 30-minute runtime limit.
-
-   - `--mem=500M`: Allocates 500MB of memory.
-
-   This will run `my_script.py` and display output directly in the terminal.
-
-
-Method 2 : To submit a python script to Slurm, you need a job script with specific configurations and commands. Below is a guide for creating a basic Slurm job script.
+	Information:
+	- `--gres=gpu:1`: Specifies 1 GPU.
+	
+	- `--time=00:30:00`: Sets a 30-minute runtime limit.
+	
+	- `--mem=500M`: Allocates 500MB of memory.
+	
+	This will run `my_script.py` and display output directly in the terminal.
 
 
-Create a Job Script:
+#### Method 2 : To submit a python script to Slurm, you need a job script with specific configurations and commands. Below is a guide for creating a basic Slurm job script.
 
 1. Create and Open a Script File using Vim or other editors (If using Vim, press 'i' to start editing):
 
-   vim my_job_script.sh
+		vim my_job_script.sh
 
 
 2. Add Slurm and Command Lines:
 
-   #!/bin/bash
-
-   #SBATCH --job-name=my_job              # Job name
-
-   #SBATCH --output=output_%j.txt          # Output file name with job ID
-
-   #SBATCH --error=error_%j.txt               # Error file name with job ID
-
-   #SBATCH  --gres=gpu:1                        # number of GPU
-
-   #Load necessary modules
-
-   module load anaconda
-
-   #Run the job command
-
-   python my_script.py
+		#!/bin/bash
+		
+		#SBATCH --job-name=my_job              # Job name
+		
+		#SBATCH --output=output_%j.txt          # Output file name with job ID
+		
+		#SBATCH --error=error_%j.txt               # Error file name with job ID
+		
+		#SBATCH  --gres=gpu:1                        # number of GPU
+		
+		#Load necessary modules
+		
+		module load anaconda
+		
+		#Run the job command
+		
+		python my_script.py
 
 
 3. Save and Close the Editor. 
@@ -190,23 +189,23 @@ Create a Job Script:
 ### Step 4: Submit the Job to Slurm
 
 
-To Submit the Job:
+- To Submit the Job:
 
-   sbatch my_job_script.sh
+		sbatch my_job_script.sh
 
-    - This submits the job to Slurm, which will schedule and execute it based on resource availability and job priority.
-
-
-To Check Job Status:
-
-   squeue -u username
-
-    - Replace `username` with your actual username. This command shows the status of your jobs.
+   -This submits the job to Slurm, which will schedule and execute it based on resource availability and job priority.
 
 
-To View Job Output:
+- To Check Job Status:
 
-    - After the job completes, check the output file specified in your script (e.g., `output_<job_id>.txt`) for results.
+		squeue -u username
+
+   -Replace `username` with your actual username. This command shows the status of your jobs.
+
+
+- To View Job Output:
+
+   -After the job completes, check the output file specified in your script (e.g., `output_<job_id>.txt`) for results.
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -219,7 +218,7 @@ Common Job Management Commands:
 
 - Cancel a Job:
 
-   scancel <job_id>
+		scancel <job_id>
 
    - Replace `<job_id>` with the ID of the job you want to cancel.
 
@@ -234,40 +233,40 @@ Note: Always confirm job parameters and resource requests as appropriate for you
 ### To use jupyter notebook with SBATCH:
 
 
-	1. SSH with -L with the jupyter port assigned to you (e.g., 9001)
+1. SSH with -L with the jupyter port assigned to you (e.g., 9001)
 
-	    ssh user123@cluster.example.com -L 9001:localhost:9001
+		ssh user123@cluster.example.com -L 9001:localhost:9001
 
 
 2. Add Slurm and Command Lines to the job script (e.g., my_job_script.sh):
 
-   #!/bin/bash
-
-   #SBATCH --job-name=my_job              # Job name
-
-   #SBATCH --output=output_%j.txt          # Output file name with job ID
-
-   #SBATCH --error=error_%j.txt               # Error file name with job ID
-
-   #SBATCH  --gres=gpu:1                        # number of GPU
-
-   #Load necessary modules
-
-   module load anaconda
+		#!/bin/bash
+		
+		#SBATCH --job-name=my_job              # Job name
+		
+		#SBATCH --output=output_%j.txt          # Output file name with job ID
+		
+		#SBATCH --error=error_%j.txt               # Error file name with job ID
+		
+		#SBATCH  --gres=gpu:1                        # number of GPU
+		
+		#Load necessary modules
+		
+		module load anaconda
 
    #Run the job command
 
-   jupyter notebook –no-browser –port=9001
+		jupyter notebook –no-browser –port=9001
 
 
-	3. To Submit the Job:
+3. To Submit the Job:
 
-   	    sbatch my_job_script.sh
+		sbatch my_job_script.sh
 
 
-	4. Find the jupyter URL with token from output.txt file
+4. Find the jupyter URL with token from output.txt file
 
-	    cat output.txt
+		cat output.txt
 
 
 5. Use jupyter notebook from your local machine as normal, with the computation performed on the server.
