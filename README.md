@@ -12,33 +12,33 @@ This server is dedicated to training AI models and computational tasks related t
 
 ### Server Usage Rules for Users
 
-Authorized Users Only: Access to the server is granted only to authorized users for academic purposes.
+**Authorized Users Only:** Access to the server is granted only to authorized users for academic purposes.
 
-Use Secure SSH Login: Always use secure SSH login with your username and password.
+**Use Secure SSH Login:** Always use secure SSH login with your username and password.
 
-Protect Credentials: Do not share your login credentials with anyone. Unauthorized access is prohibited.
+**Protect Credentials:** Do not share your login credentials with anyone. Unauthorized access is prohibited.
 
-No Personal Data: Only store data relevant to your academic or research projects. Personal or sensitive data is prohibited.
+**No Personal Data:** Only store data relevant to your academic or research projects. Personal or sensitive data is prohibited.
 
-Backup Regularly: Ensure important files are backed up. The server may undergo maintenance that could impact data availability.
+**Backup Regularly:** Ensure important files are backed up. The server may undergo maintenance that could impact data availability.
 
-Data Security: Do not attempt to access or interfere with other users' data or jobs.
+**Data Security:** Do not attempt to access or interfere with other users' data or jobs.
 
-Report Issues: Immediately report any security incidents or vulnerabilities to the server administrator.
+**Report Issues:** Immediately report any security incidents or vulnerabilities to the server administrator.
 
-Respect Maintenance Schedules: Regular maintenance times will be communicated. Log out during these times to avoid data loss.
+**Respect Maintenance Schedules:** Regular maintenance times will be communicated. Backup before the maintenance & Log out during these times to avoid data loss.
 
-Academic Use Only: The server is for educational and research purposes only. Commercial or personal use is prohibited.
+**Academic Use Only:** The server is for educational and research purposes only. Commercial or personal use is prohibited.
 
-Follow University Policies: Adhere to all university policies and guidelines related to computing resources.
+**Follow University Policies:** Adhere to all university policies and guidelines related to computing resources.
 
 
 
 ### Consequences of Misuse
 
-Account Suspension: Failure to follow these rules may result in temporary or permanent suspension of server access.
+**Account Suspension:** Failure to follow these rules may result in temporary or permanent suspension of server access.
 
-Academic Discipline: Misuse of resources may be reported and could lead to academic disciplinary action.
+**Academic Discipline:** Misuse of resources may be reported and could lead to academic disciplinary action.
 
 
 
