@@ -1,4 +1,4 @@
-# AIHUB – XMUM AIT GPU Server
+# AIHUB – XMUM AIT GPU Server 
 
 ## Rules and Tutorial on Remote Login, Module Loading, and Job Submission with Slurm
 
