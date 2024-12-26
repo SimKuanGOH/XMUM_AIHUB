@@ -1,6 +1,4 @@
-# XMUM_AIHUB
-
-Rules and Tutorial on Remote Login, Module Loading, and Job Submission with Slurm
+## Rules and Tutorial on Remote Login, Module Loading, and Job Submission with Slurm
 
 
 
