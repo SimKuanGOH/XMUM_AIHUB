@@ -2,7 +2,7 @@
 
 
 
-Purpose of Use
+### Purpose of Use
 
 This server is dedicated to training AI models and computational tasks related to your coursework or research in AI. Security testing, penetration testing, or unrelated tasks are strictly prohibited. Basic Linux skills that are expected. 
 
