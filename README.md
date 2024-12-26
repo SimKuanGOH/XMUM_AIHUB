@@ -170,11 +170,11 @@ Create a Job Script:
 
    #SBATCH  --gres=gpu:1                        # number of GPU
 
-   # Load necessary modules
+   #Load necessary modules
 
    module load anaconda
 
-   # Run the job command
+   #Run the job command
 
    python my_script.py
 
@@ -251,11 +251,11 @@ Note: Always confirm job parameters and resource requests as appropriate for you
 
    #SBATCH  --gres=gpu:1                        # number of GPU
 
-   # Load necessary modules
+   #Load necessary modules
 
    module load anaconda
 
-   # Run the job command
+   #Run the job command
 
    jupyter notebook –no-browser –port=9001
 
